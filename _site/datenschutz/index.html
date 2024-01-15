@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Datenschutzerklärung - Jekyll Curate</title>
+
+
+
+
+    <meta property="og:type" content="website"/>
+<meta property="og:url" content="http://localhost:4000/datenschutz/"/>
+
+
+  <meta property="og:title" content="Datenschutzerklärung"/>
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+    <link rel="alternate" type="application/atom+xml" title="Jekyll Curate" href="/feed.xml">
+    <link rel="icon" href="/assets/images/favicon/favicon.png">
+
+
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    
+
+    
+      <!-- https://github.com/orestbida/cookieconsent -->
+
+<link rel="stylesheet" href="/assets/css/cookieconsent.css">
+<script defer src="/assets/js/cookieconsent.js"></script>
+
+<!-- Inline script -->
+<script>
+    window.addEventListener('load', function () {
+
+        // obtain plugin
+        var cc = initCookieConsent();
+
+        // run plugin with your configuration
+        cc.run({
+            current_lang: 'en',
+            autoclear_cookies: true,                   // default: false
+            page_scripts: true,                        // default: false
+
+            // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
+            // delay: 0,                               // default: 0
+            // auto_language: '',                      // default: null; could also be 'browser' or 'document'
+            // autorun: true,                          // default: true
+            // force_consent: false,                   // default: false
+            // hide_from_bots: true,                   // default: true
+            // remove_cookie_tables: false             // default: false
+            // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
+            // cookie_expiration: 182,                 // default: 182 (days)
+            // cookie_necessary_only_expiration: 182   // default: disabled
+            // cookie_domain: location.hostname,       // default: current domain
+            // cookie_path: '/',                       // default: root
+            // cookie_same_site: 'Lax',                // default: 'Lax'
+            // use_rfc_cookie: false,                  // default: false
+            // revision: 0,                            // default: 0
+
+            onFirstAction: function (user_preferences, cookie) {
+                // callback triggered only once on the first accept/reject action
+            },
+
+            onAccept: function (cookie) {
+                // callback triggered on the first accept/reject action, and after each page load
+            },
+
+            onChange: function (cookie, changed_preferences) { 
+                // If analytics category is disabled => disable google analytics 
+                if (!cc.allowedCategory('analytics')) { 
+                    typeof gtag === 'function' && gtag('consent', 'update', { 
+                        'analytics_storage': 'denied' 
+                    }); 
+                } 
+            }, 
+
+            languages: {
+                'en': {
+                    consent_modal: {
+                        title: 'We use cookies!',
+                        description: 'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
+                        primary_btn: {
+                            text: 'Accept all',
+                            role: 'accept_all'              // 'accept_selected' or 'accept_all'
+                        },
+                        secondary_btn: {
+                            text: 'Reject all',
+                            role: 'accept_necessary'        // 'settings' or 'accept_necessary'
+                        }
+                    },
+                    settings_modal: {
+                        title: 'Cookie preferences',
+                        save_settings_btn: 'Save settings',
+                        accept_all_btn: 'Accept all',
+                        reject_all_btn: 'Reject all',
+                        close_btn_label: 'Close',
+                        // cookie_table_caption: 'Cookie list',
+                        cookie_table_headers: [
+                            { col1: 'Name' },
+                            { col2: 'Domain' },
+                            { col3: 'Expiration' },
+                            { col4: 'Description' }
+                        ],
+                        blocks: [
+                            {
+                                title: 'Cookie usage 📢',
+                                description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="#" class="cc-link">privacy policy</a>.'
+                            }, {
+                                title: 'Strictly necessary cookies',
+                                description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
+                                toggle: {
+                                    value: 'necessary',
+                                    enabled: true,
+                                    readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                                }
+                            }, {
+                                title: 'Performance and Analytics cookies',
+                                description: 'These cookies allow the website to remember the choices you have made in the past',
+                                toggle: {
+                                    value: 'analytics',     // your cookie category
+                                    enabled: false,
+                                    readonly: false
+                                },
+                                cookie_table: [             // list of all expected cookies
+                                    {
+                                        col1: '^_ga',       // match all cookies starting with "_ga"
+                                        col2: 'google.com',
+                                        col3: '2 years',
+                                        col4: 'description ...',
+                                        is_regex: true
+                                    },
+                                    {
+                                        col1: '_gid',
+                                        col2: 'google.com',
+                                        col3: '1 day',
+                                        col4: 'description ...',
+                                    }
+                                ]
+                            },
+                            {
+                                title: 'More information',
+                                description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.',
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+    });
+</script>
+    
+
+    
+
+    <link href="/assets/css/fonts.css" rel="stylesheet">
+
+
+
+
+    
+
+  </head>
+<body class="page page-basic has-fixed-header">
+
+
+<div class="menu-main-mobile nested" id="menu-main-mobile">
+  
+  <div class="menu-main-mobile-top">
+    <div id="close-overlay" class="menu-main-close">
+      <div class="hamburger"></div>
+    </div>
+  </div>
+
+  <div class="menu-main-mobile-center">
+    
+      <ul class="menu">
+        
+          
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+          
+        
+          
+            <li class="menu-item-projects">
+              <a href="/projects/">Projects</a>
+              <div class="dropdown">
+                <ul class="sub-menu">
+                  
+                    <li class="">
+                      <a href="/projects/widmanstetter/">Widmanstetter's Library</a>
+                    </li>
+                  
+                    <li class="">
+                      <a href="/projects/zacuto/">Moses Zacuto's Correspondence</a>
+                    </li>
+                  
+                    <li class="">
+                      <a href="/projects/manuforma/">manuForma</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            </li>
+          
+        
+          
+            
+            <li class="">
+              <a href="/blog/">Blog</a>
+            </li>
+          
+        
+          
+            
+            <li class="">
+              <a href="/about/">About Me</a>
+            </li>
+          
+        
+          
+            
+            <li class="">
+              <a href="/publications/">Publications</a>
+            </li>
+          
+        
+      </ul>
+    
+  </div>
+
+  <div class="menu-main-mobile-bottom">
+    
+    
+  </div>
+
+</div>
+
+
+
+
+<div id="header" class='header header-fixed'>
+  <div class="container">
+    <div class="logos">
+  <div class="logo logo-desktop">
+    
+      <div class="logo-image">
+        <a href="/">
+          <img height="28px" width="28px" alt="Jekyll Curate Logo" src="/assets/images/logo/logo.png"/>
+        </a>
+      </div>
+    
+  
+    
+      <div class="logo-text"><a href="/">Maximilian de Molière</a></div>
+    
+    
+  </div>
+
+  <div class="logo logo-desktop-invert">
+    
+    
+      <div class="logo-image">
+        <a href="/">
+          <img height="28px" width="28px" alt="Jekyll Curate Logo" src="/assets/images/logo/logo-invert.png"/>
+        </a>
+      </div>
+    
+  
+    
+      <div class="logo-text"><a href="/">Maximilian de Molière</a></div>
+    
+    
+  </div>
+
+  <div class="logo logo-mobile">
+    
+    
+      <div class="logo-image">
+        <a href="/">
+          <img height="28px" width="28px" alt="Jekyll Curate Logo" src="/assets/images/logo/logo-mobile.png"/>
+        </a>
+      </div>
+    
+  
+    
+      <div class="logo-text"><a href="/">Maximilian de Molière</a></div>
+    
+    
+  </div>
+
+
+  <div class="logo logo-mobile-invert">
+    
+    
+      <div class="logo-image">
+        <a href="/">
+          <img height="28px" width="28px" alt="Jekyll Curate Logo" src="/assets/images/logo/logo-invert-mobile.png"/>
+        </a>
+      </div>
+    
+  
+    
+      <div class="logo-text"><a href="/">Maximilian de Molière</a></div>
+    
+
+  </div>
+
+</div>
+
+
+    <div class="menu-main">
+  <ul>
+    
+      
+        
+        <li class=" ">
+          <a href="/" >Home</a>
+        </li>
+      
+    
+      
+
+        
+        
+
+        <li class="menu-item-dropdown menu-item-Projects ">
+          <a href="/projects/">Projects <i class="fa-solid fa-chevron-down"></i></a>
+          
+          <div class="dropdown-menu">
+            
+              <a href="/projects/widmanstetter/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">Widmanstetter's Library</div>
+                  
+                </div>
+              </a>
+            
+              <a href="/projects/zacuto/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">Moses Zacuto's Correspondence</div>
+                  
+                </div>
+              </a>
+            
+              <a href="/projects/manuforma/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">manuForma</div>
+                  
+                </div>
+              </a>
+            
+          </div>
+
+        </li>
+      
+    
+      
+        
+        <li class=" ">
+          <a href="/blog/" >Blog</a>
+        </li>
+      
+    
+      
+        
+        <li class=" ">
+          <a href="/about/" >About Me</a>
+        </li>
+      
+    
+      
+        
+        <li class=" ">
+          <a href="/publications/" >Publications</a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+    
+    <div class="hamburger-trigger" id="toggle-menu-main-mobile">
+  <button class="hamburger">Menu</button>
+</div>
+  </div>
+</div>
+
+<div id="wrapper" class="wrapper">     
+  <div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        
+
+
+
+
+
+
+
+
+
+<div class="heading heading-left">
+  
+  
+  
+  <div class="heading-heading">
+    <h1>Datenschutzerklärung</h1>
+  </div>
+  
+  
+  
+
+  
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="section pt-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="content"><h1 id="datenschutzerklärung">Datenschutzerklärung</h1><p><strong>Allgemeine Hinweise</strong></p><p>Diese Datenschutzerklärung enthält ausführliche Informationen darüber, was mit Ihren persönlichen Daten passiert, wenn Sie unsere Website https://mmoliere.github.io besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie sich persönlich identifizieren können. Wir halten uns bei der Verarbeitung Ihrer Daten streng an die gesetzlichen Bestimmungen, insbesondere die Datenschutzgrundverordnung („DSGVO”), und legen großen Wert darauf, dass Ihr Besuch auf unserer Website absolut sicher ist.</p><p><strong>Verantwortliche Stelle</strong></p><p>Datenschutzrechtlich verantwortlich für die Erhebung und Verarbeitungvon personenbezogenen Daten auf dieser Website ist:</p><p><strong>Vorname, Name:</strong> Maximilian de Molière<br /><strong>Straße, Hausnummer:</strong> Angerstr. 2<br /><strong>Postleitzahl, Ort:</strong> 04177 Leipzig<br /><strong>Land:</strong> Deutschland<br /><strong>E-Mail:</strong> maxmoliere@hotmail.de<br /><strong>Tel.:</strong> +49 (0) 176 4763 2900</p><p><strong>Datenschutzbeauftragter</strong></p><p>Der interne Datenschutzbeauftragte des für die Verarbeitung Verantwortlichen ist:</p><p><strong>Vorname, Name:</strong> Maximilian de Molière<br /><strong>Straße, Hausnummer:</strong> Angerstr. 2<br /><strong>Postleitzahl, Ort:</strong> 04177 Leipzig<br /><strong>Land:</strong> Deutschland<br /><strong>E-Mail:</strong> maxmoliere@hotmail.de<br /><strong>Tel.:</strong> +49 (0) 176 4763 2900</p><p>Jede betroffene Person kann sich jederzeit bei allen Fragen und Anregungen zum Datenschutz direkt an unseren Datenschutzbeauftragten wenden.</p><p><strong>Cookies</strong></p><p>Um den Besuch unserer Website attraktiv zu gestalten und die Nutzung bestimmter Funktionen zu ermöglichen, verwenden wir sogenannte Cookies. Hierbei handelt es sich um kleine Textdateien, die auf Ihrem Endgerät abgelegt werden. Cookies können keine Programme ausführen oder Viren auf Ihr Computersystem übertragen.</p><p>Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen erforderlich sind, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Wir haben ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung unserer Dienste. Soweit andere Cookies (z.B. Cookies zur Analyse Ihres Surfverhaltens) gespeichert werden, werden diese in dieser Datenschutzerklärung gesondert behandelt.</p><p>Die meisten der von uns verwendeten Cookies sind so genannte „Session-Cookies”. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.</p><p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.</p><p><strong>Kontaktaufnahme</strong></p><p>Sofern Sie mit uns Kontakt, darunter auch per E-Mail aufnehmen, werden übermittelte Daten einschließlich Ihrer Kontaktdaten gespeichert, um Ihre Anfrage bearbeiten zu können oder um für Anschlussfragen bereitzustehen. Eine Weitergabe dieser Daten findet ohne Ihre Einwilligung nicht statt.</p><p>Die Verarbeitung Ihrer Daten erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.</p><p>Übermittelte Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder keine Notwendigkeit der Datenspeicherung mehr besteht. Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen - bleiben unberührt.</p><p><strong>Datenverwendung und -weitergabe</strong></p><p>Die personenbezogenen Daten, die Sie uns z.B. per E-Mail mitteilen (z.B. Ihr Name und Ihre Adresse oder Ihre E-Mail-Adresse), werden wir weder an Dritte verkaufen noch anderweitig vermarkten. Ihre personenbezogenen Daten werden nur zur Korrespondenz mit Ihnen und nur für den Zweck verarbeitet, zu dem Sie uns die Daten zur Verfügung gestellt haben. Zur Abwicklung von Zahlungen geben wir Ihre Zahlungsdaten an das mit der Zahlung beauftragte Kreditinstitut weiter.</p><p>Die Verwendung von Daten, die bei Ihrem Besuch unserer Website automatisch erhoben werden, erfolgt nur zu den vorstehend genannten Zwecken. Eine anderweitige Verwendung der Daten findet nicht statt.</p><p>Wir versichern, dass wir Ihre personenbezogenen Daten im Übrigen nicht an Dritte weitergeben, es sei denn, dass wir dazu gesetzlich verpflichtet wären oder Sie uns vorher Ihre Zustimmung gegeben haben.</p><p><strong>SSL- bzw. TLS-Verschlüsselung</strong></p><p>Unsere Website benutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://” auf „https://” wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p><p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p><p><strong>Speicherdauer</strong></p><p>Personenbezogene Daten, die uns über unsere Website mitgeteilt worden sind, werden nur so lange gespeichert, bis der Zweck erfüllt ist, zu dem sie uns anvertraut wurden. Soweit handels- und steuerrechtliche Aufbewahrungsfristen zu beachten sind, kann die Speicherdauer zu bestimmten Daten bis zu 10 Jahre betragen.</p><p><strong>Betroffenenrechte</strong></p><p>Hinsichtlich der Sie betreffenden personenbezogenen Daten haben als Betroffener der Datenverarbeitung nach Maßgabe der gesetzlichen Bestimmungen folgende Rechte gegenüber dem Verantwortlichen:</p><ol>  <li><strong>Widerrufsrecht</strong></li></ol><p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sofern die Verarbeitung Ihrer Daten auf Ihrer Einwilligung beruht, haben Sie das Recht, eine einmal erteilte Einwilligung in die Verarbeitung von Daten gemäß Art. 7 Abs. 3 DSGVO jederzeit mit Wirkung für die Zukunft zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt. Speicherung der Daten für Abrechnungs- und buchhalterische Zwecke bleibt von einem Widerruf nicht berührt.</p><ol>  <li><strong>Auskunftsrecht</strong></li></ol><p>Sie haben das Recht, gemäß Art. 15 DSGVO von uns eine Bestätigung darüber zu verlangen, ob wir personenbezogene Daten verarbeiten, die Sie betreffen. Liegt eine solche Verarbeitung vor, haben Sie das Recht auf Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten, die Verarbeitungszwecke, die Kategorien der verarbeiteten personenbezogenen Daten, die Empfänger oder Kategorien von Empfängern, gegenüber denen Ihre Daten offengelegt wurden oder werden, die geplante Speicherdauer bzw. die Kriterien für die Festlegung der Speicherdauer, das Bestehen eines Rechts auf Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung, Beschwerde bei einer Aufsichtsbehörde, die Herkunft Ihrer Daten, wenn diese nicht durch uns bei Ihnen erhoben wurden, das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling und ggf. aussagekräftige Informationen über die involvierte Logik und die Sie betreffende Tragweite und die angestrebten Auswirkungen einer solchen Verarbeitung, sowie Ihr Recht auf Unterrichtung, welche Garantien gemäß Art. 46 DSGVO bei Weiterleitung Ihrer Daten in Drittländer bestehen.</p><ol>  <li><strong>Recht auf Berichtigung</strong></li></ol><p>Sie haben das Recht, gemäß Art. 16 DSGVO jederzeit unverzügliche Berichtigung Sie betreffender unrichtiger personenbezogener Daten und/oder die Vervollständigung Ihrer unvollständigen Daten zu verlangen.</p><ol>  <li><strong>Recht auf Löschung</strong></li></ol><p>Sie haben das Recht, gemäß Art. 17 DSGVO die Löschung Ihrer personenbezogenen Daten zu verlangen, sofern einer der folgenden Gründe zutrifft:</p><ol>  <li>Ihre personenbezogenen Daten sind für die Zwecke, für die sie erhoben oder auf sonstige Weise verarbeitet wurden, nicht mehr notwendig.</li>  <li>Sie widerrufen Ihre Einwilligung, auf die sich die Verarbeitung gemäß Art. 6 Abs. 1 lit. a oder Art. 9 Abs. 2 lit. a DSGVO stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung.</li>  <li>Sie legen gemäß Art. 21 Abs. 1 DSGVO Widerspruch gegen die Verarbeitung ein und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor, oder Sie legen gemäß Art. 21 Abs. 2 DSGVO Widerspruch gegen die Verarbeitung ein.</li>  <li>Die personenbezogenen Daten wurden unrechtmäßig verarbeitet.</li>  <li>Die Löschung der personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht des Mitgliedstaates erforderlich, dem wir unterliegen.</li>  <li>Die personenbezogenen Daten wurden in Bezug auf angebotene Dienste der Informationsgesellschaft gemäß Art. 8 Abs. 1 DSGVO erhoben.</li></ol><p>Dieses Recht besteht jedoch nicht, soweit die Verarbeitung erforderlich ist:</p><ol>  <li>zur Ausübung des Rechts auf freie Meinungsäußerung und Information;</li>  <li>zur Erfüllung einer rechtlichen Verpflichtung, die die Verarbeitung nach dem Recht der Union oder des Mitgliedstaates, dem wir unterliegen, erfordert, oder zur Wahrnehmung einer Aufgabe, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die uns übertragen wurde;</li>  <li>aus Gründen des öffentlichen Interesses im Bereich der öffentlichen Gesundheit gemäß Art. 9 Abs. 2 lit. h und i sowie Art. 9 Abs. 3 DSGVO;</li>  <li>für im öffentlichen Interesse liegende Archivzwecke, wissenschaftliche oder historische Forschungszwecke oder für statistische Zwecke gemäß Art. 89 Abs. 1 DSGVO, soweit das Betroffenenrecht voraussichtlich die Verwirklichung der Ziele dieser Verarbeitung unmöglich macht oder ernsthaft beeinträchtigt, oder</li>  <li>zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</li></ol><p>Haben wir Ihre personenbezogenen Daten öffentlich gemacht und sind wir nach Vorstehendem zu deren Löschung verpflichtet, so treffen wir unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten angemessene Maßnahmen, auch technischer Art, um für die Datenverarbeitung Verantwortliche, die die personenbezogenen Daten verarbeiten, darüber zu informieren, dass Sie als betroffene Person von ihnen die Löschung aller Links zu Ihren personenbezogenen Daten oder von Kopien oder Replikationen dieser personenbezogenen Daten verlangt haben.</p><ol>  <li><strong>Recht auf Einschränkung der Verarbeitung</strong></li></ol><p>Sie haben das Recht, gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung (Sperrung) Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:</p><ol>  <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie<br />das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>  <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah / geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>  <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>  <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li></ol><p>Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung<br />abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.</p><ol>  <li><strong>Recht auf Unterrichtung</strong></li></ol><p>Haben Sie das Recht auf Berichtigung, Löschung oder Einschränkung der Verarbeitung gegenüber uns geltend gemacht, sind wir verpflichtet, allen Empfängern, denen Ihre personenbezogenen Daten offengelegt wurden, diese Berichtigung oder Löschung der Daten oder Einschränkung der Verarbeitung mitzuteilen, es sei denn, dies erweist sich als unmöglich oder ist mit einem unverhältnismäßigen Aufwand verbunden. Ihnen steht gemäß Art. 19 DSGVO das Recht zu, nach Verlangen über diese Empfänger unterrichtet zu werden.</p><ol>  <li><strong>Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden</strong></li></ol><p>Sie haben das Recht, gemäß Art. 22 DSGVO nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden, die Ihnen gegenüber rechtliche Wirkung entfaltet oder Sie in ähnlicher Weise erheblich beeinträchtigt.</p><p>Dies gilt nicht, wenn die Entscheidung</p><ol>  <li>für den Abschluss oder die Erfüllung eines Vertrags zwischen Ihnen und uns erforderlich ist,</li>  <li>aufgrund von Rechtsvorschriften der Union oder der Mitgliedstaaten, denen der Verantwortliche unterliegt, zulässig ist und diese Rechtsvorschriften angemessene Maßnahmen zur Wahrung Ihrer Rechte und Freiheiten sowie Ihrer berechtigten Interessen enthalten oder</li>  <li>mit Ihrer ausdrücklichen Einwilligung erfolgt.</li></ol><p>Allerdings dürfen die Entscheidungen in den in (a) bis (c) genannten Fällen nicht auf besonderen Kategorien personenbezogener Daten nach Art. 9 Abs. 1 DSGVO beruhen, sofern nicht Art. 9 Abs. 2 lit. a oder<br />lit. g gilt und angemessene Maßnahmen zum Schutz der Rechte und Freiheiten sowie Ihrer berechtigten Interessen getroffen wurden.</p><p>In den in (a) und (c) genannten Fällen treffen wir angemessene Maßnahmen, um Ihre Rechte und Freiheiten sowie Ihre berechtigten Interessen zu wahren, wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung gehört.</p><ol>  <li><strong>Recht auf Datenübertragbarkeit</strong></li></ol><p>Sofern die Verarbeitung auf Ihrer Einwilligung gem. Art. 6 Abs. 1 lit. a DSGVO oder Art. 9 Abs. 2 lit. a DSGVO oder auf einem Vertrag gemäß Art. 6 Abs. 1 lit. b DSGVO beruht und mithilfe automatisierter Verfahren erfolgt, haben Sie das Recht, gemäß Art. 20 DSGVO Ihre personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesebaren Format zu erhalten und einem anderen Verantwortlichen zu übermitteln oder die Übermittlung an einen anderen Verantwortlichen zu verlangen, soweit dies technisch machbar ist.</p><ol>  <li><strong>Widerspruchsrecht</strong></li></ol><p>Soweit wir die Verarbeitung Ihrer personenbezogenen Daten auf die Interessenabwägung nach Art. 6 Abs. 1 lit. f DSGVO stützen, haben Sie jederzeit das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen die Verarbeitung Ihrer personenbezogenen Daten Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmung gestütztes Profiling. Die jeweilige Rechtsgrundlage, auf der eine Verarbeitung beruht, entnehmen Sie dieser Datenschutzerklärung. Wenn Sie Widerspruch einlegen, werden wir Ihre betroffenen personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen (Widerspruch nach Art. 21 Abs. 1 DSGVO).</p><p>Werden Ihre personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben, so haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung Sie betreffender personenbezogener Daten zum Zwecke derartiger Werbung einzulegen; dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht. Wenn Sie widersprechen, werden Ihre personenbezogenen Daten anschließend nicht mehr zum Zwecke der Direktwerbung verwendet (Widerspruch nach Art. 21 Abs. 2 DSGVO).</p><p>Sie haben die Möglichkeit, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft – ungeachtet der Richtlinie 2002/58/EG - Ihr Widerspruchsrecht mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen verwendet werden.</p><ol>  <li><strong>Beschwerderecht bei der zuständigen Aufsichtsbehörde gemäß Art. 77 DSGVO</strong>\</li></ol><p>Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.</p><p>Die für uns zuständige Aufsichtsbehörde ist:</p><p>Der Sächsische Datenschutzbeauftragte\ Postfach 11 01 32<br />01330 Dresden</p><p>Devrientstraße 5<br />01067 Dresden<br />Telefon: 03 51 / 85471-101<br />E-Mail: saechsdsb@slt.sachsen.de<br />Internet: https://www.saechsdsb.de/</p><p><strong>Gültigkeit und Änderung dieser Datenschutzerklärung</strong></p><p>Diese Datenschutzerklärung gilt ab dem 15. Januar 2024. Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit unter Beachtung der geltenden Datenschutzvorschriften zu ändern. Dies kann z.B. zur Einhaltung neuer Gesetzesbestimmungen oder zur Berücksichtigung der Änderungen unserer Website bzw. neuer Dienstleistungen auf unserer Website erforderlich sein. Es gilt die zum Zeitpunkt Ihres Besuchs abrufbare Fassung.</p><p>Sollte diese Datenschutzerklärung geändert werden, beabsichtigen wir, Änderungen an unserer Datenschutzerklärung auf dieser Seite bekannt zu geben, sodass Sie umfassend darüber informiert sind, welche personenbezogene Daten wir sammeln, wie wir sie verarbeiten und unter welchen Umständen sie weitergegeben werden können.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-12 col-md-4">
+          <div class="footer-info">
+            
+              <h2>Maximilian de Molière</h2>
+            
+
+            
+          </div>
+
+          
+          
+        </div>
+
+        <div class="col-12 col-md-8 mt-gutter mt-md-0">
+          <div class="row justify-content-end">
+
+            
+              <div class="col-12 col-md-3 mt-gutter mt-md-0">
+                <div class="footer-menu">
+                  
+                    <h3> </h3>
+                  
+                  
+<div class="menu-footer">
+  <ul>
+    
+      <li class="">
+        <a href="/projects/widmanstetter/">Widmanstetter's Library</a>
+      </li>
+    
+      <li class="">
+        <a href="/projects/zacuto/">Moses Zacuto's Correspondence</a>
+      </li>
+    
+      <li class="">
+        <a href="/projects/manuforma/">manuForma</a>
+      </li>
+    
+  </ul>
+</div>
+
+                </div>
+              </div>
+            
+
+            
+              <div class="col-12 col-md-3 mt-gutter mt-md-0">
+                <div class="footer-menu">
+                
+                  <h3> </h3>
+                
+                
+<div class="menu-footer">
+  <ul>
+    
+      <li class="">
+        <a href="/about/">About Me</a>
+      </li>
+    
+      <li class="">
+        <a href="/publications/">Publications</a>
+      </li>
+    
+      <li class="">
+        <a href="/blog/">Blog</a>
+      </li>
+    
+      <li class="">
+        <a href="https://orcid.org/0000-0002-2168-8655">ORCID</a>
+      </li>
+    
+      <li class="">
+        <a href="https://halle.academia.edu/MaximiliandeMoliere">Academia</a>
+      </li>
+    
+  </ul>
+</div>
+
+                </div>
+              </div>
+            
+
+            
+        
+          </div>
+        </div>
+      
+    </div>
+    
+
+  </div>
+</div>
+
+
+  <div class="bottom">
+  <div class="container relative">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-auto">
+       
+        
+          <div class="menu-bottom">
+  <ul>
+    
+      <li class="menu-item-Datenschutzerklärung">
+        <a href="/datenschutz/">Datenschutzerklärung</a>
+      </li>
+    
+      <li class="menu-item-Impressum">
+        <a href="/impressum/">Impressum</a>
+      </li>
+    
+  </ul>
+</div>
+        
+        
+          <a href="#" data-cc="c-settings">Cookies</a>
+        
+        
+          <div class="copyright">© 2024 Maximilian de Molière</div>
+        
+        
+        
+        
+      </div>
+         
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="/assets/js/scripts.js"></script>
+
+  <script type="text/javascript" src="/assets/js/header.js"></script>
+
+<script type="text/javascript" src="/assets/js/hamburger.js"></script>
+<script type="text/javascript" src="/assets/js/darkModeSwitch.js"></script>
+
+
+
+
+
+</body>
+</html>

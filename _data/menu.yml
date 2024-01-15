@@ -1,0 +1,66 @@
+main:
+  - name: Home
+    url: /
+    weight: 1
+  - name: Projects
+    url: /projects/
+    weight: 2
+    child:
+      - name: "Widmanstetter's Library"
+        url: /projects/widmanstetter/
+      - name: "Moses Zacuto's Correspondence"
+        url: /projects/zacuto/
+      - name: "manuForma"
+        url: /projects/manuforma/
+  - name: Blog
+    url: /blog/
+    weight: 3
+  - name: About Me
+    url: /about/
+    weight: 4
+  - name: Publications
+    url: /publications/
+    weight: 5
+  
+
+footer_primary:
+- name: "Widmanstetter's Library"
+  url: /projects/widmanstetter/
+- name: "Moses Zacuto's Correspondence"
+  url: /projects/zacuto/
+- name: "manuForma"
+  url: /projects/manuforma/
+
+footer_secondary:
+  - name: About Me
+    url: /about/
+    weight: 3
+  - name: Publications
+    url: /publications/
+    weight: 4
+  - name: Blog
+    url: /blog/
+    weight: 2
+  - name: ORCID
+    url: https://orcid.org/0000-0002-2168-8655
+    weight: 2
+  - name: Academia
+    url: https://halle.academia.edu/MaximiliandeMoliere
+    weight: 2
+
+
+footer_tertiary:
+  - name: Datenschutzerklärung
+    url: /datenschutz/
+    weight: 2
+  - name: Impressum
+    url: /impressum/
+    weight: 5
+
+bottom:
+  - name: Datenschutzerklärung
+    url: /datenschutz/
+    weight: 2
+  - name: Impressum
+    url: /impressum/
+    weight: 5

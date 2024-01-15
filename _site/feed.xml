@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jekyll Curate</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 15 Jan 2024 12:26:15 +0100</pubDate>
+    <lastBuildDate>Mon, 15 Jan 2024 12:26:15 +0100</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>My Book on Widmanstetter has been Published</title>
+        <description>&lt;p&gt;I’m thrilled to share with you the publication of my book, “Confronting Kabbalah: Studies in the Christian Hebraist Library of Johann Albrecht Widmanstetter.” It’s been quite a journey, delving into the fascinating world of Renaissance humanism and Christian Hebraism, and I’m eager to take you along with me through the pages of this book.&lt;/p&gt;
+
+&lt;p&gt;At its heart, this book is a deep dive into the extraordinary library of Johann Albrecht Widmanstetter, a notable figure in the study of Hebrew books in early modern Europe. I had the incredible opportunity to work hands-on with original manuscripts and printed books from his collection which are stored in Bayerische Staatsbibliothek München.&lt;/p&gt;
+
+&lt;p&gt;Widmanstetter’s collection, rich with 195 manuscripts and volumes of Jewish books in Hebrew, Aramaic and Arabic, became the central focus of my study. It was fascinating to uncover how he went about collecting books from far flung corners outside Europe which was quite a revolutionary endeavor for a Christian scholar of his time. Another theme in my book is how Widmanstetter engaged with these texts, especially the Kabbalah, and came to some surprising conclusions.&lt;/p&gt;
+
+&lt;p&gt;I hope “Confronting Kabbalah” offers you a unique perspective into the world of Johann Albrecht Widmanstetter and the vibrant intellectual exchanges of the Renaissance era. It’s a story of the enduring power of books to connect us across centuries.&lt;/p&gt;
+
+&lt;p&gt;You can buy your copy from &lt;a href=&quot;https://brill.com/display/title/60360&quot;&gt;Brill&lt;/a&gt; – find out if your library’s subscription qualifies you for buying the “My Book” version, which is substantially more affordable.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 11 Jan 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/2024-01-11-confronting-kabbalah-published/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2024-01-11-confronting-kabbalah-published/</guid>
+        
+        
+        <category>History of the Book</category>
+        
+        <category>Kabbalah</category>
+        
+      </item>
+    
+  </channel>
+</rss>

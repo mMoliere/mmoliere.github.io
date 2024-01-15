@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Moses Zacuto's Correspondence Project - Jekyll Curate</title>
+
+
+  <meta name="description" content="In contrast subsymbolic processing specifies no such rules a priori and relies on emergent properties of processing units"/>
+
+
+
+    <meta property="og:type" content="website"/>
+<meta property="og:url" content="http://localhost:4000/projects/zacuto/"/>
+
+
+  <meta property="og:title" content="Moses Zacuto's Correspondence Project"/>
+
+
+
+  <meta property="og:description" content="In contrast subsymbolic processing specifies no such rules a priori and relies on emergent properties of processing units"/>
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/gen/projects/zacuto/zacuto-thumbnail.jpg"/>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+    <link rel="alternate" type="application/atom+xml" title="Jekyll Curate" href="/feed.xml">
+    <link rel="icon" href="/assets/images/favicon/favicon.png">
+
+
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    
+
+    
+      <!-- https://github.com/orestbida/cookieconsent -->
+
+<link rel="stylesheet" href="/assets/css/cookieconsent.css">
+<script defer src="/assets/js/cookieconsent.js"></script>
+
+<!-- Inline script -->
+<script>
+    window.addEventListener('load', function () {
+
+        // obtain plugin
+        var cc = initCookieConsent();
+
+        // run plugin with your configuration
+        cc.run({
+            current_lang: 'en',
+            autoclear_cookies: true,                   // default: false
+            page_scripts: true,                        // default: false
+
+            // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
+            // delay: 0,                               // default: 0
+            // auto_language: '',                      // default: null; could also be 'browser' or 'document'
+            // autorun: true,                          // default: true
+            // force_consent: false,                   // default: false
+            // hide_from_bots: true,                   // default: true
+            // remove_cookie_tables: false             // default: false
+            // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
+            // cookie_expiration: 182,                 // default: 182 (days)
+            // cookie_necessary_only_expiration: 182   // default: disabled
+            // cookie_domain: location.hostname,       // default: current domain
+            // cookie_path: '/',                       // default: root
+            // cookie_same_site: 'Lax',                // default: 'Lax'
+            // use_rfc_cookie: false,                  // default: false
+            // revision: 0,                            // default: 0
+
+            onFirstAction: function (user_preferences, cookie) {
+                // callback triggered only once on the first accept/reject action
+            },
+
+            onAccept: function (cookie) {
+                // callback triggered on the first accept/reject action, and after each page load
+            },
+
+            onChange: function (cookie, changed_preferences) { 
+                // If analytics category is disabled => disable google analytics 
+                if (!cc.allowedCategory('analytics')) { 
+                    typeof gtag === 'function' && gtag('consent', 'update', { 
+                        'analytics_storage': 'denied' 
+                    }); 
+                } 
+            }, 
+
+            languages: {
+                'en': {
+                    consent_modal: {
+                        title: 'We use cookies!',
+                        description: 'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
+                        primary_btn: {
+                            text: 'Accept all',
+                            role: 'accept_all'              // 'accept_selected' or 'accept_all'
+                        },
+                        secondary_btn: {
+                            text: 'Reject all',
+                            role: 'accept_necessary'        // 'settings' or 'accept_necessary'
+                        }
+                    },
+                    settings_modal: {
+                        title: 'Cookie preferences',
+                        save_settings_btn: 'Save settings',
+                        accept_all_btn: 'Accept all',
+                        reject_all_btn: 'Reject all',
+                        close_btn_label: 'Close',
+                        // cookie_table_caption: 'Cookie list',
+                        cookie_table_headers: [
+                            { col1: 'Name' },
+                            { col2: 'Domain' },
+                            { col3: 'Expiration' },
+                            { col4: 'Description' }
+                        ],
+                        blocks: [
+                            {
+                                title: 'Cookie usage 📢',
+                                description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="#" class="cc-link">privacy policy</a>.'
+                            }, {
+                                title: 'Strictly necessary cookies',
+                                description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
+                                toggle: {
+                                    value: 'necessary',
+                                    enabled: true,
+                                    readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                                }
+                            }, {
+                                title: 'Performance and Analytics cookies',
+                                description: 'These cookies allow the website to remember the choices you have made in the past',
+                                toggle: {
+                                    value: 'analytics',     // your cookie category
+                                    enabled: false,
+                                    readonly: false
+                                },
+                                cookie_table: [             // list of all expected cookies
+                                    {
+                                        col1: '^_ga',       // match all cookies starting with "_ga"
+                                        col2: 'google.com',
+                                        col3: '2 years',
+                                        col4: 'description ...',
+                                        is_regex: true
+                                    },
+                                    {
+                                        col1: '_gid',
+                                        col2: 'google.com',
+                                        col3: '1 day',
+                                        col4: 'description ...',
+                                    }
+                                ]
+                            },
+                            {
+                                title: 'More information',
+                                description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.',
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+    });
+</script>
+    
+
+    
+
+    <link href="/assets/css/fonts.css" rel="stylesheet">
+
+
+
+
+    
+
+  </head>
+<body class="page page-project has-fixed-header">
+
+
+<div class="menu-main-mobile nested" id="menu-main-mobile">
+  
+  <div class="menu-main-mobile-top">
+    <div id="close-overlay" class="menu-main-close">
+      <div class="hamburger"></div>
+    </div>
+  </div>
+
+  <div class="menu-main-mobile-center">
+    
+      <ul class="menu">
+        
+          
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+          
+        
+          
+            <li class="menu-item-projects">
+              <a href="/projects/">Projects</a>
+              <div class="dropdown">
+                <ul class="sub-menu">
+                  
+                    <li class="">
+                      <a href="/projects/widmanstetter/">Widmanstetter's Library</a>
+                    </li>
+                  
+                    <li class=" active ">
+                      <a href="/projects/zacuto/">Moses Zacuto's Correspondence</a>
+                    </li>
+                  
+                    <li class="">
+                      <a href="/projects/manuforma/">manuForma</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            </li>
+          
+        
+          
+            
+            <li class="">
+              <a href="/blog/">Blog</a>
+            </li>
+          
+        
+          
+            
+            <li class="">
+              <a href="/about/">About Me</a>
+            </li>
+          
+        
+          
+            
+            <li class="">
+              <a href="/publications/">Publications</a>
+            </li>
+          
+        
+      </ul>
+    
+  </div>
+
+  <div class="menu-main-mobile-bottom">
+    
+    
+  </div>
+
+</div>
+
+
+
+
+<div id="header" class='header header-fixed'>
+  <div class="container">
+    <div class="logos">
+  <div class="logo logo-desktop">
+    
+      <div class="logo-image">
+        <a href="/">
+          <img height="28px" width="28px" alt="Jekyll Curate Logo" src="/assets/images/logo/logo.png"/>
+        </a>
+      </div>
+    
+  
+    
+      <div class="logo-text"><a href="/">Maximilian de Molière</a></div>
+    
+    
+  </div>
+
+  <div class="logo logo-desktop-invert">
+    
+    
+      <div class="logo-image">
+        <a href="/">
+          <img height="28px" width="28px" alt="Jekyll Curate Logo" src="/assets/images/logo/logo-invert.png"/>
+        </a>
+      </div>
+    
+  
+    
+      <div class="logo-text"><a href="/">Maximilian de Molière</a></div>
+    
+    
+  </div>
+
+  <div class="logo logo-mobile">
+    
+    
+      <div class="logo-image">
+        <a href="/">
+          <img height="28px" width="28px" alt="Jekyll Curate Logo" src="/assets/images/logo/logo-mobile.png"/>
+        </a>
+      </div>
+    
+  
+    
+      <div class="logo-text"><a href="/">Maximilian de Molière</a></div>
+    
+    
+  </div>
+
+
+  <div class="logo logo-mobile-invert">
+    
+    
+      <div class="logo-image">
+        <a href="/">
+          <img height="28px" width="28px" alt="Jekyll Curate Logo" src="/assets/images/logo/logo-invert-mobile.png"/>
+        </a>
+      </div>
+    
+  
+    
+      <div class="logo-text"><a href="/">Maximilian de Molière</a></div>
+    
+
+  </div>
+
+</div>
+
+
+    <div class="menu-main">
+  <ul>
+    
+      
+        
+        <li class=" ">
+          <a href="/" >Home</a>
+        </li>
+      
+    
+      
+
+        
+        
+
+        <li class="menu-item-dropdown menu-item-Projects  active ">
+          <a href="/projects/">Projects <i class="fa-solid fa-chevron-down"></i></a>
+          
+          <div class="dropdown-menu">
+            
+              <a href="/projects/widmanstetter/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">Widmanstetter's Library</div>
+                  
+                </div>
+              </a>
+            
+              <a href="/projects/zacuto/" class="dropdown-item  active ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">Moses Zacuto's Correspondence</div>
+                  
+                </div>
+              </a>
+            
+              <a href="/projects/manuforma/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">manuForma</div>
+                  
+                </div>
+              </a>
+            
+          </div>
+
+        </li>
+      
+    
+      
+        
+        <li class=" ">
+          <a href="/blog/" >Blog</a>
+        </li>
+      
+    
+      
+        
+        <li class=" ">
+          <a href="/about/" >About Me</a>
+        </li>
+      
+    
+      
+        
+        <li class=" ">
+          <a href="/publications/" >Publications</a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+    
+    <div class="hamburger-trigger" id="toggle-menu-main-mobile">
+  <button class="hamburger">Menu</button>
+</div>
+  </div>
+</div>
+
+<div id="wrapper" class="wrapper">     
+  
+
+<div class="section">
+  <div class="container">
+    
+    <div class="row mb-6">
+      <div class="col">
+        <div class="gallery gallery-two-column">
+          
+          <div class="gallery-item">
+            <div class="gallery-image"><img src="/assets/images/gen/projects/zacuto/zacuto-letter.jpeg" /></div>
+            <div class="gallery-caption"><strong>Above:</strong> The edition provides information on the entities mentioned in the text and the textual witnesses.</div>
+          </div>
+          
+          <div class="gallery-item">
+            <div class="gallery-image"><img src="/assets/images/gen/projects/zacuto/zacuto-places.jpeg" /></div>
+            <div class="gallery-caption"><strong>Above:</strong> A map visualizes the extent of Zacuto's correspondents in Europe and beyond.</div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        
+        <div class="project-heading">
+          <h1>Moses Zacuto's Correspondence Project</h1>
+        </div>
+         
+        <div class="project-categories">
+
+
+  
+    
+
+
+
+
+<div class="category-link">
+<a href="/category/epistolography">
+  Epistolography
+</a>
+
+</div>
+  
+    
+
+
+
+
+<div class="category-link">
+<a href="/category/digital-humanities">
+  Digital Humanities
+</a>
+
+</div>
+  
+    
+
+
+
+
+<div class="category-link">
+<a href="/category/kabbalah">
+  Kabbalah
+</a>
+
+</div>
+  
+</div>
+         
+        <div class="project-date"><strong>Updated </strong><span>15 January 2024</span></div>
+          
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="content"><p>Since 2018, I have been working with my colleagues in Halle and Beer Sheva on the correspondence of R. Moses Zacuto (ca. 1610–1697). The goal is create both a digital edition and a printed edition of the entire corpus of R. Moses Zacuto’s Correspondence, including newly discovered letters and responsa. I have compiled exhaustive inventories that serve as an essential guide to understanding the context and content of Zacuto’s correspondence and activities e.g. in kabbalah, hostage ransoming, and donations to communities in need.</p>
+
+<p>As well as the edition itself, I have developed a platform for critical editions, based on TEI Publisher, and this stands as a significant contribution to the field of digital humanities, particularly Judaic studies. This platform will offer a synoptic view of different textual witnesses, and features enhanced markup capabilities, which provides users with robust search options. An interactive map feature allows users to explore the places mentioned in the texts, adding a spatial dimension to the study and enriching the understanding of historical and cultural contexts. The platform integrates with linked open data (LOD) from data providers, ensuring that it is not only content-rich but also connected to a broader network of scholarly resources. Importantly, both the TEI-XML data and the platform’s infrastructure will be available for future projects under a Creative Commons license once the current edition is complete and all transcriptions of the Hebrew texts have been proofread.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-12 col-md-4">
+          <div class="footer-info">
+            
+              <h2>Maximilian de Molière</h2>
+            
+
+            
+          </div>
+
+          
+          
+        </div>
+
+        <div class="col-12 col-md-8 mt-gutter mt-md-0">
+          <div class="row justify-content-end">
+
+            
+              <div class="col-12 col-md-3 mt-gutter mt-md-0">
+                <div class="footer-menu">
+                  
+                    <h3> </h3>
+                  
+                  
+<div class="menu-footer">
+  <ul>
+    
+      <li class="">
+        <a href="/projects/widmanstetter/">Widmanstetter's Library</a>
+      </li>
+    
+      <li class="active">
+        <a href="/projects/zacuto/">Moses Zacuto's Correspondence</a>
+      </li>
+    
+      <li class="">
+        <a href="/projects/manuforma/">manuForma</a>
+      </li>
+    
+  </ul>
+</div>
+
+                </div>
+              </div>
+            
+
+            
+              <div class="col-12 col-md-3 mt-gutter mt-md-0">
+                <div class="footer-menu">
+                
+                  <h3> </h3>
+                
+                
+<div class="menu-footer">
+  <ul>
+    
+      <li class="">
+        <a href="/about/">About Me</a>
+      </li>
+    
+      <li class="">
+        <a href="/publications/">Publications</a>
+      </li>
+    
+      <li class="">
+        <a href="/blog/">Blog</a>
+      </li>
+    
+      <li class="">
+        <a href="https://orcid.org/0000-0002-2168-8655">ORCID</a>
+      </li>
+    
+      <li class="">
+        <a href="https://halle.academia.edu/MaximiliandeMoliere">Academia</a>
+      </li>
+    
+  </ul>
+</div>
+
+                </div>
+              </div>
+            
+
+            
+        
+          </div>
+        </div>
+      
+    </div>
+    
+
+  </div>
+</div>
+
+
+  <div class="bottom">
+  <div class="container relative">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-auto">
+       
+        
+          <div class="menu-bottom">
+  <ul>
+    
+      <li class="menu-item-Datenschutzerklärung">
+        <a href="/datenschutz/">Datenschutzerklärung</a>
+      </li>
+    
+      <li class="menu-item-Impressum">
+        <a href="/impressum/">Impressum</a>
+      </li>
+    
+  </ul>
+</div>
+        
+        
+          <a href="#" data-cc="c-settings">Cookies</a>
+        
+        
+          <div class="copyright">© 2024 Maximilian de Molière</div>
+        
+        
+        
+        
+      </div>
+         
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="/assets/js/scripts.js"></script>
+
+  <script type="text/javascript" src="/assets/js/header.js"></script>
+
+<script type="text/javascript" src="/assets/js/hamburger.js"></script>
+<script type="text/javascript" src="/assets/js/darkModeSwitch.js"></script>
+
+
+
+
+
+</body>
+</html>
