@@ -7,7 +7,7 @@ thumbnail: "/assets/images/gen/projects/ilanot/ilanot-thumbnail.jpg"
 image: "/assets/images/gen/projects/ilanot/ilanot-thumbnail.jpg"
 categories: ["History of the Book", "Kabbalah"]
 gallery:
-  - image: "/assets/images/gen/projects/ilanot/Mun_450_top.jpg"
+  - image: "/assets/images/gen/projects/ilanot/Mun_450_top.png"
     caption: "<strong>Above:</strong> Hammerschlag Ilan. BSB, Cod.hebr. 450. Courtesy of Bayerische Staatsbibliothek München, used under [CC BY-NC-SA 4.0 Deed 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) / modified from the original"
   - image: "/assets/images/gen/projects/widmanstetter/Mun_119.jpg"
     caption: "<strong>Above:</strong> Depiction of the sefirot in a complex ilan ha-sefirot. BSB, Cod.hebr. 119, ff. 24r–25r. Courtesy of Bayerische Staatsbibliothek München, used under [CC BY-NC-SA 4.0 Deed 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) / modified from the original"
