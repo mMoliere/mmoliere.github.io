@@ -4,7 +4,7 @@ title: "About <strong>Maximilian de Molière</strong>"
 permalink: "/about/"
 description: ""
 gallery:
-    - image: "/assets/images/gen/content/mmoliere/Portrait-Moliere-2026.jpg"
+    - image: "/assets/images/gen/content/mmoliere/Portrait-Moliere-2026.jpeg"
 ---
 
 # What I Do
