@@ -6,6 +6,8 @@ main:
     url: /projects/
     weight: 2
     child:
+      - name: "Tracing Ilanot"
+        url: /projects/ilanot/
       - name: "Widmanstetter's Library"
         url: /projects/widmanstetter/
       - name: "Moses Zacuto's Correspondence"
@@ -24,6 +26,8 @@ main:
   
 
 footer_primary:
+- name: "Tracing Ilanot"
+  url: /projects/ilanot/
 - name: "Widmanstetter's Library"
   url: /projects/widmanstetter/
 - name: "Moses Zacuto's Correspondence"

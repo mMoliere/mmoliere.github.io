@@ -2,7 +2,7 @@
 layout: project-left
 title: "manuForma – Manuscript Cataloging Tool"
 description: " "
-weight: 2
+weight: 4
 thumbnail: "/assets/images/gen/projects/manuForma/manuforma-thumbnail.jpg"
 image: "/assets/images/gen/projects/manuForma/manuforma-thumbnail.jpg"
 categories: ["Digital Humanities", "History of the Book"]

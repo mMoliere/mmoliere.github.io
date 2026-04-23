@@ -8,9 +8,9 @@ image: "/assets/images/gen/projects/widmanstetter/widmanstetter-thumbnail.jpg"
 categories: ["History of the Book", "Kabbalah"]
 gallery:
   - image: "/assets/images/gen/projects/widmanstetter/Sefirotic Crucifixion.jpg"
-    caption: "<strong>Above:</strong> Johann Albrecht Widmanstetter, Liber Sacrosancti Evangelii de Jesu Christo (Vienna: Michael Zimmermann, 1555), D2b. courtesy of bayerische staatsbibliothek münchen, used under [CC BY-NC-SA 4.0 Deed 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) / modified from the original"
+    caption: "<strong>Above:</strong> Johann Albrecht Widmanstetter, *Liber Sacrosancti Evangelii de Jesu Christo* (Vienna: Michael Zimmermann, 1555), D2b. Courtesy of Bayerische Staatsbibliothek München, used under [CC BY-NC-SA 4.0 Deed 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) / modified from the original"
   - image: "/assets/images/gen/projects/widmanstetter/Mun_119.jpg"
-    caption: "<strong>Above:</strong> Depiction of the sefirot in a complex ilan ha-sefirot. bsb, Cod.hebr. 119, ff. 24r– 25r. courtesy of bayerische staatsbibliothek münchen, used under [CC BY-NC-SA 4.0 Deed 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) / modified from the original"
+    caption: "<strong>Above:</strong> Depiction of the sefirot in a complex ilan ha-sefirot. BSB, Cod.hebr. 119, ff. 24r–25r. Courtesy of Bayerische Staatsbibliothek München, used under [CC BY-NC-SA 4.0 Deed 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) / modified from the original"
   - image: "/assets/images/gen/content/Confronting-Kabbalah-Cover.jpg"
 ---
 
