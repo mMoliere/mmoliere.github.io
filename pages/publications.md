@@ -29,6 +29,15 @@ gallery:
 
 „Johann Albrecht Widmanstetter’s Recension of the Zohar“. *Kabbalah: Journal for the Study of Jewish Mystical Texts* 41 (2018), 7–52.
 
+# Blog Posts
+
+“Leipzig’s Role in the Early Exploration of Qaraite Literature.” Munich Research Centre for Jewish-Arabic Cultures, 13 February 2025. [Link](https://www.jewisharabiccultures.fak12.uni-muenchen.de/leipzigs-role-in-the-early-exploration-of-qaraite-literature/).
+
+“Rabbi Juda der Fromme.” Gesichter unseres Landes, 13 September  2021. [Link](https://www.hss.de/news/detail/gesichter-unseres-landes-rabbi-juda-der-fromme-news7963/).
+
+
+“Elijah Levita (Ben Ascher Ha Levi).” Gesichter unseres Landes, 2 July 2021. [Link](https://www.hss.de/news/detail/gesichter-unseres-landes-elijah-levita-news7798/);  [Repost on Haus Der Bayrischen Geschichte](https://hdbg.eu/biografien/detail/elijah-levita-ben-ascher-ha-levi/10146).
+
 
 # Encyclopedia Articles
 

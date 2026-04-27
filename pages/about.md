@@ -1,6 +1,6 @@
 ---
 layout: project-left
-title: "About <strong>Maximilian de Molière</strong>"
+title: "About Maximilian de Molière"
 permalink: "/about/"
 description: ""
 gallery:
